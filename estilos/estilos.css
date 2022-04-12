@@ -14,6 +14,9 @@
         src: url(../fonts/alegreya.ttf);
 }
 @media (max-width: 479px) {
+        .gradiente {
+                background-image: linear-gradient(to right, white , grey);
+        }
         h1 {
                 font-family: ultra;
                 font-size: medium;
@@ -234,8 +237,14 @@
                 background-color: rgb(57, 75, 57);
                 color: orange;
         }
+        .gradFooter {
+                background-image: linear-gradient(to right, black, rgb(27, 27, 27), rgb(42, 42, 42), grey);
+        }
 }
 @media (min-width: 480px) and (max-width: 1023px){
+        .gradiente {
+                background-image: linear-gradient(to right, white , grey);
+        }
         h1 {
                 font-family: ultra;
                 font-size: large;
@@ -462,9 +471,15 @@
                 background-color: rgb(57, 75, 57);
                 color: orange;
         }
+        .gradFooter {
+                background-image: linear-gradient(to right, black, rgb(27, 27, 27), rgb(42, 42, 42), grey);
+        }
 
 }
 @media (min-width: 1024px) {
+        .gradiente {
+                background-image: linear-gradient(to right, white , grey);
+        }
         h1 {
                 font-family: ultra;
                 font-size: 3rem;
@@ -690,12 +705,21 @@
                 height: 60px;
         }
         .imgPeq {
-                width: 100px;
-                height: 50px;
+                width: 60px;
+                height: 30px;
         }
         div h2 {
                 font-family: cinzel;
                 background-color: rgb(57, 75, 57);
                 color: orange;
+        }
+        .transicion {
+                transition: all 1s;
+        }
+        .transicion:hover {
+                border: inset 5px grey;
+        }
+        .gradFooter {
+                background-image: linear-gradient(to right, black, rgb(27, 27, 27), rgb(42, 42, 42), grey);
         }
 }
