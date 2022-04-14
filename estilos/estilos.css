@@ -1,725 +1,128 @@
 * {
-        margin: 0;
+    margin: 0;
+    padding: 0;
 }
 @font-face {
-        font-family: "Ultra";
-        src: url(../fonts/Ultra-Regular.ttf);
+    font-family: "alegreya";
+    src: url(../fonts/alegreya.ttf);
 }
 @font-face {
-        font-family: "cinzel";
-        src: url(../fonts/Cinzel-Bold.ttf);
+    font-family: "Ultra";
+    src: url(../fonts/Ultra-Regular.ttf);
 }
-@font-face {
-        font-family: "alegreya";
-        src: url(../fonts/alegreya.ttf);
+.cardFlex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    background-image: linear-gradient(to bottom, grey , white);
 }
-@media (max-width: 479px) {
-        .gradiente {
-                background-image: linear-gradient(to right, white , grey);
-        }
-        h1 {
-                font-family: ultra;
-                font-size: medium;
-        }
-        nav {
-                font-family: alegreya;
-                padding: 10px;
-                background-color: black;
-        }
-        span {
-                margin-top: 0;
-                margin-right: 130px;
-                color: orange;
-                font-weight: bold;
-        }        
-        header div {
-                background-color: black;
-                margin-left: 0;
-                margin-top: 0;
-        }
-        nav a {
-                text-decoration: none;
-        }
-        footer {
-                font-family: cinzel;
-                font-size: 1.5ch;
-                padding-top: 30px;
-                background-color: black;
-                color: orange;
-                text-align: right;
-        }
-        .fotos {
-                border: 2px black ;
-                margin-left: 80px;
-                margin-right: 120px;
-        }
-        .cajafotos {
-                padding-bottom: 10px;
-                background-color: rgb(57, 75, 57);
-        
-              
-        }
-        .bordes {
-                border: 5px solid black;
-        }
-        li {
-                display: inline;
-                color: orange;
-                padding-right: 120px;
-                font-weight: bold;
-        
-        }
-        ul {
-                margin: 0%;
-                padding: 0;
-                
-        }
-        p {
-                color: white;
-                font-weight: bold;
-                margin-bottom: 25px;
-        }
-        .ubicacion {
-                padding-top: 2%;
-                margin: 0;
-                background-color: rgb(57, 75, 57);
-                color: orange;
-        }
-        .dirdatos {
-                font-family: cinzel;
-                font-size: 4ch;
-                display: inline;
-                color: orange;
-                font-weight: bold;
-                font-style: italic;
-        }
-        .sectionp {
-                font-family: cinzel;
-                font-size: 2.5ch;
-                font-style: italic;
-                font-weight: bold;
-        }
-        .nosotrostitulo {
-                font-size: 4ch;
-                color: orange;
-                padding-top: 2%;
-                margin-bottom: 2%;
-                text-decoration: underline;
-        }
-        h2 a {
-                text-decoration: none;
-        }
-        section {
-                background-color: rgb(57, 75, 57);
-                font-family: cinzel;
-                font-size: 3ch;
-                padding-top: 2%;
-                padding-bottom: 2%;
-        }
-        form {
-                padding-top: 2%;
-                font-size: 2.8ch;
-                font-weight: bold;
-        }
-        form span {
-                color: black;
-                margin-right: 0%;
-        }
-        .ofertas {
-                color: orange;
-        }
-        .oferTex {
-                padding-bottom: 2%;
-                padding-top: 2%;
-        }
-        .imagen {
-                padding-left: 3%;
-                padding-right: 5%;
-        }
-        .prod {
-              background-color: rgb(57, 75, 57);
-              color: orange;
-              font-size: 3ch;
-        }
-        .letraprod {
-                color: white;
-                padding-top: 25px;
-                padding-bottom: 50px;
-        }
-        h3 {
-             padding-bottom: 5%;
-             border: 4px solid black ;   
-        }
-
-        .cabeceraFlex {
-                display: flex;
-                justify-content: space-between;
-        }
-        .menuFlex {
-                display: flex;
-                flex-direction: column;
-        }
-        .fotosFlex {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                align-items: stretch;
-        }
-        .footerFlex {
-                display: flex;
-        }
-        #gridArea {
-                display: grid;
-                grid-template-areas:
-                "header"
-                "menu"
-                "main"
-                "footer" ;
-                grid-template-columns: 100%;
-                grid-template-rows: max-content;
-                
-        }
-        #gridArea1 {
-                display: grid;
-                grid-template-areas: 
-                "header"
-                "menu"
-                "main"
-                "maindos"
-                "footer";
-                grid-template-columns: 100%;
-                grid-template-rows: max-content;
-        }
-        #gridArea2 {
-                display: grid;
-                grid-template-areas: 
-                "header"
-                "menu"
-                "main"
-                "footer";
-                grid-template-columns: 100%;
-                grid-template-rows: 0.3fr max-content 3fr 0.5fr;
-        }
-        .contenidoGrid2 {
-                grid-area: maindos;
-        }
-        header {
-                grid-area: header;
-        }
-        footer {
-                grid-area: footer;
-        }
-        .gridNav {
-                grid-area: menu;
-        }
-        .contenidoGrid {
-                grid-area: main;
-        }
-        .imgPe {
-                width: 30px;
-                height: 30px;
-        }
-        .imgPeq {
-                width: 50px;
-                height: 25px;
-        }
-        .ubtit {
-                font-size: 4ch;
-                margin-bottom: 30px;
-                text-decoration: underline;
-        }
-        .nosotros {
-                background-color: rgb(57, 75, 57);
-                padding-top: 20px;
-        }
-        div h2 {
-                font-family: cinzel;
-                background-color: rgb(57, 75, 57);
-                color: orange;
-        }
-        .gradFooter {
-                background-image: linear-gradient(to right, black, rgb(27, 27, 27), rgb(42, 42, 42), grey);
-        }
+.margenCarrusel {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 20%;
+    padding-left: 20%;
+    background-image: linear-gradient(to bottom, black , grey);
 }
-@media (min-width: 480px) and (max-width: 1023px){
-        .gradiente {
-                background-image: linear-gradient(to right, white , grey);
-        }
-        h1 {
-                font-family: ultra;
-                font-size: large;
-        }
-        nav {
-                font-family: alegreya;
-                padding: 10px;
-                background-color: black;
-        }
-        span {
-                margin-top: 0;
-                margin-right: 130px;
-                color: orange;
-                font-weight: bold;
-        }        
-        header div {
-                background-color: black;
-                margin-left: 0;
-                margin-top: 0;
-        }
-        nav a {
-                text-decoration: none;
-        }
-        footer {
-                font-family: cinzel;
-                font-size: 1.5ch;
-                padding-top: 30px;
-                background-color: black;
-                color: orange;
-                text-align: right;
-        }
-        .fotos {
-                border: 2px black ;
-                margin-left: 80px;
-                margin-right: 120px;
-        }
-        .cajafotos {
-                padding-bottom: 10px;
-                background-color: rgb(57, 75, 57);
-        
-              
-        }
-        .bordes {
-                border: 5px solid black;
-        }
-        li {
-                display: inline;
-                color: orange;
-                padding-right: 120px;
-                font-weight: bold;
-        
-        }
-        ul {
-                margin: 0%;
-                padding: 0;
-                
-        }
-        p {
-                color: white;
-                font-weight: bold;
-        }
-        .ubicacion {
-                padding-top: 2%;
-                margin: 0;
-                background-color: rgb(57, 75, 57);
-                color: orange;
-        }
-        .dirdatos {
-                font-family: cinzel;
-                font-size: 4ch;
-                display: inline;
-                color: orange;
-                font-weight: bold;
-                font-style: italic;
-        }
-        .sectionp {
-                font-family: cinzel;
-                font-size: 2.5ch;
-                font-style: italic;
-                font-weight: bold;
-        }
-        .nosotrostitulo {
-                font-size: 4ch;
-                color: orange;
-                padding-top: 2%;
-                margin-bottom: 2%;
-                text-decoration: underline;
-        }
-        .mayTex {
-                font-family: cinzel;
-                background-color: rgb(57, 75, 57);
-                color: orange;
-                padding-top: 2%;
-                padding-bottom: 27%;
-        }
-        h2 a {
-                text-decoration: none;
-        }
-        section {
-                background-color: rgb(57, 75, 57);
-                font-family: cinzel;
-                font-size: 3ch;
-                padding-top: 2%;
-                padding-bottom: 2%;
-        }
-        form {
-                padding-top: 2%;
-                font-size: 2.8ch;
-                font-weight: bold;
-        }
-        form span {
-                color: black;
-                margin-right: 0%;
-        }
-        .ofertas {
-                color: orange;
-        }
-        .oferTex {
-                padding-bottom: 2%;
-                padding-top: 2%;
-        }
-        .imagen {
-                padding-left: 3%;
-                padding-right: 5%;
-        }
-        .prod {
-              background-color: rgb(57, 75, 57);
-              color: orange;
-              font-size: 3ch;
-        }
-        .letraprod {
-                color: white;
-                padding-top: 25px;
-                padding-bottom: 50px
-        }
-        h3 {
-             padding-bottom: 5%;
-             border: 4px solid black ;   
-        }
-
-        .cabeceraFlex {
-                display: flex;
-                justify-content: space-between;
-        }
-        .menuFlex {
-                display: flex;
-                flex-direction: column;
-        }
-        .fotosFlex {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                align-items: stretch;
-        }
-        .footerFlex {
-                display: flex;
-        }
-        #gridArea {
-                display: grid;
-                grid-template-areas:
-                "header"
-                "menu"
-                "main"
-                "footer" ;
-                grid-template-columns: 100%;
-                grid-template-rows: max-content;
-                
-        }
-        #gridArea1 {
-                display: grid;
-                grid-template-areas: 
-                "header"
-                "menu"
-                "main"
-                "maindos"
-                "footer";
-                grid-template-columns: 100%;
-                grid-template-rows: max-content;
-        }
-        #gridArea2 {
-                display: grid;
-                grid-template-areas: 
-                "header"
-                "menu"
-                "main"
-                "footer";
-                grid-template-columns: 100%;
-                grid-template-rows: 0.3fr max-content 3fr 0.5fr;
-        }
-        .contenidoGrid2 {
-                grid-area: maindos;
-        }
-        header {
-                grid-area: header;
-        }
-        footer {
-                grid-area: footer;
-        }
-        .gridNav {
-                grid-area: menu;
-        }
-        .contenidoGrid {
-                grid-area: main;
-        }
-        .imgPe {
-                width: 35px;
-                height: 35px;
-        }
-        .imgPeq {
-                width: 60px;
-                height: 30px;
-        }
-        .ubtit {
-                font-size: 4ch;
-                margin-bottom: 30px;
-                text-decoration: underline;
-        }
-        .nosotros {
-                background-color: rgb(57, 75, 57);
-                padding-top: 20px;
-        }
-        div h2 {
-                font-family: cinzel;
-                background-color: rgb(57, 75, 57);
-                color: orange;
-        }
-        .gradFooter {
-                background-image: linear-gradient(to right, black, rgb(27, 27, 27), rgb(42, 42, 42), grey);
-        }
-
+#carouselExampleControls {
+    border: 4px solid black;
 }
-@media (min-width: 1024px) {
-        .gradiente {
-                background-image: linear-gradient(to right, white , grey);
-        }
-        h1 {
-                font-family: ultra;
-                font-size: 3rem;
-        }
-        nav {
-                font-family: alegreya;
-                padding: 10px;
-                background-color: black;
-        }
-        span {
-                margin-top: 0;
-                margin-right: 130px;
-                color: orange;
-                font-weight: bold;
-        }        
-        header div {
-                background-color: black;
-                margin-left: 0;
-                margin-top: 0;
-        }
-        nav a {
-                text-decoration: none;
-        }
-        footer {
-                font-family: cinzel;
-                font-size: 1.5ch;
-                padding-top: 30px;
-                background-color: black;
-                color: orange;
-                
-        }
-        .fotos {
-                border: 2px black ;
-                margin-left: 80px;
-                margin-right: 120px;
-        }
-        .cajafotos {
-                padding-bottom: 10px;
-                background-color: rgb(57, 75, 57);
-        
-              
-        }
-        .bordes {
-                margin-top: 5px;
-                border: 5px solid black;
-                width: 450;
-                height: 400;
-        }
-        li {
-                display: inline;
-                color: orange;
-                padding-right: 120px;
-                font-weight: bold;
-        
-        }
-        ul {
-                margin: 0%;
-                padding: 0;
-                
-        }
-        p {
-                color: white;
-                font-weight: bold;
-        }
-        .ubicacion {
-                padding-top: 2%;
-                margin: 0;
-                background-color: rgb(57, 75, 57);
-                color: orange;
-        }
-        .dirdatos {
-                font-family: cinzel;
-                font-size: 4ch;
-                display: inline;
-                color: orange;
-                font-weight: bold;
-                font-style: italic;
-        }
-        .sectionp {
-                font-family: cinzel;
-                font-size: 2.5ch;
-                font-style: italic;
-                font-weight: bold;
-        }
-        .nosotros {
-                background-color: rgb(57, 75, 57);
-                padding-top: 20px;
-        }
-        .nosotrostitulo {
-                font-size: 4ch;
-                color: orange;
-                padding-top: 2%;
-                margin-bottom: 2%;
-                text-decoration: underline;
-        }
-        .ubtit {
-                font-size: 4ch;
-                margin-bottom: 30px;
-                text-decoration: underline;
-        }
-        .mayTex {
-                font-family: cinzel;
-                font-size: 3ch;
-                background-color: rgb(57, 75, 57);
-                color: orange;
-                padding-top: 2%;
-                padding-bottom: 27%;
-        }
-        h2 a {
-                text-decoration: none;
-        }
-        section {
-                background-color: rgb(57, 75, 57);
-                font-family: cinzel;
-                font-size: 3ch;
-                padding-top: 2%;
-                padding-bottom: 2%;
-        }
-        form {
-                padding-top: 2%;
-                font-size: 2.8ch;
-                font-weight: bold;
-        }
-        form span {
-                color: black;
-                margin-right: 0%;
-        }
-        .ofertas {
-                color: orange;
-        }
-        .oferTex {
-                padding-bottom: 2%;
-                padding-top: 2%;
-        }
-        .imagen {
-                padding-left: 3%;
-                padding-right: 5%;
-        }
-        .prod {
-              background-color: rgb(57, 75, 57);
-              color: orange;
-              font-size: 3ch;
-        }
-        .letraprod {
-                color: white;
-                padding-top: 25px;
-                padding-bottom: 50px
-        }
-        h3 {
-             padding-bottom: 5%;
-             border: 4px solid black ;   
-        }
-
-        .cabeceraFlex {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 4px;
-        }
-        .menuFlex {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-        }
-        .fotosFlex {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-evenly;
-                background-color: rgb(57, 75, 57);
-        }
-        .footerFlex {
-                display: flex;
-        }
-        #gridArea {
-                display: grid;
-                grid-template-areas:
-                "header"
-                "menu"
-                "main"
-                "footer" ;
-                grid-template-columns: 100%;
-                grid-template-rows: max-content;
-                
-        }
-        #gridArea1 {
-                display: grid;
-                grid-template-areas: 
-                "header"
-                "menu"
-                "main"
-                "maindos"
-                "footer";
-                grid-template-columns: 100%;
-                grid-template-rows: max-content;
-        }
-        #gridArea2 {
-                display: grid;
-                grid-template-areas: 
-                "header"
-                "menu"
-                "main"
-                "footer";
-                grid-template-columns: 100%;
-                grid-template-rows: 0.3fr max-content 3fr 0.5fr;
-        }
-        .contenidoGrid2 {
-                grid-area: maindos;
-        }
-        header {
-                grid-area: header;
-        }
-        footer {
-                grid-area: footer;
-        }
-        .gridNav {
-                grid-area: menu;
-        }
-        .contenidoGrid {
-                grid-area: main;
-        }
-        .imgPe {
-                width: 60px;
-                height: 60px;
-        }
-        .imgPeq {
-                width: 60px;
-                height: 30px;
-        }
-        div h2 {
-                font-family: cinzel;
-                background-color: rgb(57, 75, 57);
-                color: orange;
-        }
-        .transicion {
-                transition: all 1s;
-        }
-        .transicion:hover {
-                border: inset 5px grey;
-        }
-        .gradFooter {
-                background-image: linear-gradient(to right, black, rgb(27, 27, 27), rgb(42, 42, 42), grey);
-        }
+.nav-item {
+    font-weight: bold;
+}
+.fotoFrente {
+    padding-top: 5%;
+    background-image: linear-gradient(to bottom, black , grey);
+}
+.titulocontacto {
+    color: white;
+    background-image: linear-gradient(to bottom, black , grey);
+}
+.form {
+    color: white;
+    background-image: linear-gradient(to bottom, grey , rgb(61, 60, 60));
+}
+.ubicacion {
+    color: white;
+    background-image: linear-gradient(to bottom, grey , rgb(61, 60, 60));
+}
+h1 {
+    font-family: ultra;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.padd {
+    padding: 0%;
+}
+.titProd {
+    padding-bottom: 5%;
+    text-decoration: underline;
+}
+.fotProd {
+    display: flex;
+    justify-content: space-evenly;
+}
+h2 {
+    padding-bottom: 10%;
+    font-family: alegreya;
+    color: white;
+}
+h3 {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: white;
+    text-decoration: underline;
+}
+.headerFlex {
+    display: flex;
+    justify-content:space-between;
+}
+.carousel-inner img {
+    height: 400px;
+}
+.imgPe {
+    padding: 2px;
+    width: 60px;
+    height: 60px;
+}
+.seccionC {
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+.imgPeq {
+    padding: 2px;
+    width: 80px;
+    height: 40px;
+}
+.navbar-nav {
+    background-image: linear-gradient(to bottom, grey , white );
+    justify-content: space-evenly;
+    width: 100%;
+}
+.logoderecha {
+    text-align: right;
+}
+@media (max-width: 800px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+    .margenCarrusel {
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    .fotI {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    .imgPe {
+        width: 40px;
+        height: 40px;
+    }
+    .imgPeq {
+        width: 60px;
+        height: 30px;
+}
 }
