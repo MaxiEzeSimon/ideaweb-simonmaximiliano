@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
 }
 @font-face {
     font-family: "alegreya";
@@ -12,27 +11,33 @@
 }
 .cardFlex {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 10%;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
     padding-top: 5%;
     background-image: linear-gradient(to bottom, grey , white);
 }
-.margenCarrusel {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-right: 20%;
-    padding-left: 20%;
-    background-image: linear-gradient(to bottom, black , grey);
+.cardFlex2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    background-image: linear-gradient(to bottom, white , grey);
 }
-#carouselExampleControls {
-    border: 4px solid black;
+.margenCarrusel {
+    padding-bottom: 3%;
+    background-image: linear-gradient(to bottom, white , grey);
 }
 .nav-item {
     font-weight: bold;
 }
 .fotoFrente {
-    padding-top: 5%;
-    background-image: linear-gradient(to bottom, black , grey);
+    display: flex;
+    text-align: center;
+    padding-top: 3%;
+    background-image: linear-gradient(to bottom, white , grey);
+}
+.img-fluid {
+    border: 1px solid black;
 }
 .titulocontacto {
     color: white;
@@ -43,8 +48,9 @@
     background-image: linear-gradient(to bottom, grey , rgb(61, 60, 60));
 }
 .ubicacion {
-    color: white;
-    background-image: linear-gradient(to bottom, grey , rgb(61, 60, 60));
+    text-align: center;
+    padding-bottom: 5%;
+    background-image: linear-gradient(to bottom, white , grey);
 }
 h1 {
     font-family: ultra;
@@ -53,6 +59,7 @@ h1 {
 }
 .padd {
     padding: 0%;
+    overflow: hidden;
 }
 .titProd {
     padding-bottom: 5%;
@@ -63,22 +70,32 @@ h1 {
     justify-content: space-evenly;
 }
 h2 {
-    padding-bottom: 10%;
-    font-family: alegreya;
-    color: white;
-}
-h3 {
     padding-top: 5%;
+    font-family: alegreya;
+    color: black;
+}
+h5 {
+    font-weight: bold;
+    color: rgb(49, 49, 49);
+}
+.ofertInd {
+    background-image: linear-gradient(to bottom, white , grey);
+    padding: 0;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+h4 {
+    padding-top: 2%;
     padding-bottom: 2%;
-    color: white;
-    text-decoration: underline;
+    color: black;
 }
 .headerFlex {
     display: flex;
     justify-content:space-between;
 }
 .carousel-inner img {
-    height: 400px;
+    height: 500px;
 }
 .imgPe {
     padding: 2px;
@@ -102,20 +119,78 @@ h3 {
 .logoderecha {
     text-align: right;
 }
+.sombra {
+    box-shadow: 5px 5px 10px black;
+    transition: box-shadow 1s;
+}
+.sombra:hover {
+    box-shadow: 15px 15px 25px black;
+}
+.footReg {
+    margin: 0;
+    padding-top: 8px;
+    text-align: right;
+    font-style: italic;
+}
+.fotI {
+    margin: 0;
+}
+footer {
+    background-image: linear-gradient(to bottom, white, grey);
+}
+.mePaFlex {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+iframe {
+    transition: all 2s;
+}
+iframe:hover {
+    width: 100%;
+}
+h2 {
+    margin: 0;
+}
+#gridArea {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "main2"
+    "footer" ;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: menu;
+}
+.main1 {
+    grid-area: main;
+}
+.main2 {
+    grid-area: main2;
+}
+footer {
+    grid-area: footer;
+}
 @media (max-width: 800px) {
     .carousel-inner img {
         height: 300px;
     }
-    .margenCarrusel {
-        padding-top: 15%;
-        padding-bottom: 10%;
-    }
     .fotI {
         padding-top: 15%;
-        padding-bottom: 15%;
+        padding-bottom: 8%;
     }
     h1 {
         font-size: 1.3rem;
+    }
+    .img-fluid {
+        width: 100%;
     }
     .imgPe {
         width: 40px;
@@ -124,5 +199,37 @@ h3 {
     .imgPeq {
         width: 60px;
         height: 30px;
-}
+    }
+    .sombra {
+        width: 110px;
+        height: 147px;
+    }
+    .mePaFlex {
+        justify-content: space-between;
+    }
+    .medios {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .mpfl {
+        padding-left: 5%;
+    }
+    .fotoFrente {
+        display: block;
+        padding-bottom: 10%;
+    }
+    .mpfl1 {
+        padding-right: 5%;
+    }
+    .footReg {
+        text-align: center;
+    }
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+    .ubicacion {
+        background-image: linear-gradient(to bottom, rgb(207, 205, 205), grey);
+    }
+
 }
