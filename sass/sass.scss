@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+}
+@import "tipografia";
+@import "gridarea";
+$bgi-gtow: linear-gradient(to bottom, grey , white );
+$bgi-wtog: linear-gradient(to bottom, white , grey);
+header {
+    h1 {
+     font-family: ultra;
+     font-size: 2.5rem;
+     text-align: center;
+    }
+    
+}
+.padd {
+    padding: 0%;
+    overflow: hidden;
+}
+.logoderecha {
+    text-align: right;
+}
+.imgPe {
+    padding: 2px;
+    width: 60px;
+    height: 60px;
+}
+.imgPeq {
+    padding: 2px;
+    width: 80px;
+    height: 40px;
+}
+.navbar-nav {
+    background-image: $bgi-gtow;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.nav-item {
+    font-weight: bold;
+}
+.margenCarrusel {
+    padding-bottom: 3%;
+    background-image: $bgi-wtog;
+}
+.carousel-inner img {
+    height: 500px;
+}
+div {
+    .ofertInd {
+        background-image: $bgi-wtog;
+        padding: 0;
+        text-align: center;
+        color: black;
+        margin: 0;
+    }
+}
+.cardFlex {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background-image: $bgi-gtow;
+}
+.cardFlex2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    background-image: $bgi-wtog;
+}
+.sombra {
+    box-shadow: 5px 5px 10px black;
+    transition: box-shadow 1s;
+    &:hover {
+        box-shadow: 15px 15px 25px black
+    }
+}
+footer {
+    background-image: $bgi-wtog;
+        .mePaFlex {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 5px;
+        }
+        .footReg {
+            text-align: center;
+        }
+}
+@media (max-width: 800px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+    .fotI {
+        padding-top: 15%;
+        padding-bottom: 8%;
+    }
+    header {
+        h1 {
+            font-size: 1.3rem;
+        }
+    }       
+    .imgPe {
+        width: 40px;
+        height: 40px;
+    }
+    .imgPeq {
+        width: 60px;
+        height: 30px;
+    }
+    .sombra {
+        width: 110px;
+        height: 147px;
+    }
+    footer {
+        .mePaFlex {
+            justify-content: space-between;
+        }
+        .medios {
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .mpfl {
+            padding-left: 5%;
+        }
+        .mpfl1 {
+            padding-right: 5%;
+        }
+    }
+}
+
+

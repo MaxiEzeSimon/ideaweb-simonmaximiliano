@@ -1,0 +1,26 @@
+#gridArea {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "main"
+    "main2"
+    "footer" ;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: menu;
+}
+.main1 {
+    grid-area: main;
+}
+.main2 {
+    grid-area: main2;
+}
+footer {
+    grid-area: footer;
+}
