@@ -5,6 +5,12 @@
 @import "gridarea";
 $bgi-gtow: linear-gradient(to bottom, grey , white );
 $bgi-wtog: linear-gradient(to bottom, white , grey);
+$s-e: space-evenly;
+$s-b: space-between;
+@mixin tamanios($width, $height) {
+    width: $width;
+    height: $height;
+}
 header {
     h1 {
      font-family: ultra;
@@ -14,25 +20,38 @@ header {
     
 }
 .padd {
+    display: flex;
+    justify-content: $s-b;
     padding: 0%;
     overflow: hidden;
 }
-.logoderecha {
-    text-align: right;
+header {
+    div {
+        a {
+            &:hover {
+                opacity: 0.5;
+            }
+           
+        }
+    }
+}
+#logRed {
+    padding-left: 20%;
+}
+#titulo {
+    padding-left: 7%;
 }
 .imgPe {
     padding: 2px;
-    width: 60px;
-    height: 60px;
+    @include tamanios(70px, 70px);
 }
 .imgPeq {
-    padding: 2px;
-    width: 80px;
-    height: 40px;
+    padding: 0;
+    @include tamanios(80px, 40px);
 }
 .navbar-nav {
     background-image: $bgi-gtow;
-    justify-content: space-evenly;
+    justify-content: $s-e;
     width: 100%;
 }
 .nav-item {
@@ -45,7 +64,27 @@ header {
 .carousel-inner img {
     height: 500px;
 }
+section{
+    h2 {
+        padding-bottom: 5%;
+        text-decoration: underline;
+    }
+}
 div {
+    h2 {
+        padding-top: 5%;
+        font-family: alegreya;
+        color: black;
+    }
+    h4 {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        color: black;
+    }
+    h5 {
+        font-weight: bold;
+        color: rgb(49, 49, 49);
+    }
     .ofertInd {
         background-image: $bgi-wtog;
         padding: 0;
@@ -56,18 +95,15 @@ div {
 }
 .cardFlex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: $s-e;
     margin: 0;
     padding-bottom: 5%;
     padding-top: 5%;
     background-image: $bgi-gtow;
 }
 .cardFlex2 {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
+    @extend .cardFlex;
     padding-bottom: 10%;
-    padding-top: 5%;
     background-image: $bgi-wtog;
 }
 .sombra {
@@ -81,16 +117,81 @@ footer {
     background-image: $bgi-wtog;
         .mePaFlex {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: $s-e;
             padding-top: 5px;
         }
         .footReg {
             text-align: center;
         }
 }
-@media (max-width: 800px) {
+.fotoFrente {
+    display: flex;
+    text-align: center;
+    padding-top: 3%;
+    background-image: $bgi-wtog;
+}
+.ubicacion {
+    text-align: center;
+    padding-bottom: 5%;
+    background-image: $bgi-wtog;
+}    
+.img-fluid {
+        border: 1px solid black;
+}    
+
+iframe {
+    transition: all 2s;
+    &:hover {
+        width: 100%;
+    }
+}    
+.tituloContacto {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color: white;
+    background-image: linear-gradient(to bottom, black , grey);
+}
+.form {
+    @extend .tituloContacto;
+    background-image: linear-gradient(to bottom, grey , rgb(61, 60, 60));
+}
+.ofertas {
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: $s-b;
+    background-image: $bgi-wtog;
+}
+main {
+    h2 {
+        text-decoration: underline;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+    h3 {
+        text-decoration: underline;
+        padding-top: 1%;
+    }
+}
+$mapa: (
+    p1: black,
+    p2: blue,
+    p3: red,
+    p4: black,
+    p5: blue,
+    p6: red
+);
+@each $nombre, $colores in $mapa {
+    .color-#{$nombre} {
+        color: $colores;
+    }
+}   
+@media (max-width: 850px) {
     .carousel-inner img {
         height: 300px;
+    }
+    #logRed {
+        padding-left: 10%;
     }
     .fotI {
         padding-top: 15%;
@@ -98,24 +199,22 @@ footer {
     }
     header {
         h1 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
     }       
     .imgPe {
-        width: 40px;
-        height: 40px;
+        @include tamanios(50px, 50px);
     }
     .imgPeq {
-        width: 60px;
-        height: 30px;
+        @include tamanios(30px, 30px);
+        padding: 0%;
     }
     .sombra {
-        width: 110px;
-        height: 147px;
+        @include tamanios(110px, 147px);
     }
     footer {
         .mePaFlex {
-            justify-content: space-between;
+            justify-content: $s-e;
         }
         .medios {
             font-size: 0.8rem;
@@ -127,6 +226,28 @@ footer {
         .mpfl1 {
             padding-right: 5%;
         }
+    }
+    .fotoFrente {
+        display: block;
+        padding-bottom: 10%;
+    }
+    iframe {
+        @include tamanios(100%, 400px);
+    }
+    .ubicacion {
+        background-image: linear-gradient(to bottom, rgb(112, 110, 110), grey);
+    }
+
+}
+@media (max-width: 600px) {
+    header {
+        h1 {
+            font-size: 1rem;
+        }
+    }
+    #titulo {
+        padding-left: 0;
+        padding-top: 3%;
     }
 }
 

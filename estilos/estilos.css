@@ -44,22 +44,32 @@ header h1 {
 }
 
 .padd {
+  display: flex;
+  justify-content: space-between;
   padding: 0%;
   overflow: hidden;
 }
 
-.logoderecha {
-  text-align: right;
+header div a:hover {
+  opacity: 0.5;
+}
+
+#logRed {
+  padding-left: 20%;
+}
+
+#titulo {
+  padding-left: 7%;
 }
 
 .imgPe {
   padding: 2px;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 .imgPeq {
-  padding: 2px;
+  padding: 0;
   width: 80px;
   height: 40px;
 }
@@ -83,6 +93,25 @@ header h1 {
   height: 500px;
 }
 
+section h2 {
+  padding-bottom: 5%;
+  text-decoration: underline;
+}
+
+div h2 {
+  padding-top: 5%;
+  font-family: alegreya;
+  color: black;
+}
+div h4 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: black;
+}
+div h5 {
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+}
 div .ofertInd {
   background-image: linear-gradient(to bottom, white, grey);
   padding: 0;
@@ -91,7 +120,7 @@ div .ofertInd {
   margin: 0;
 }
 
-.cardFlex {
+.cardFlex, .cardFlex2 {
   display: flex;
   justify-content: space-evenly;
   margin: 0;
@@ -101,11 +130,7 @@ div .ofertInd {
 }
 
 .cardFlex2 {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0;
   padding-bottom: 10%;
-  padding-top: 5%;
   background-image: linear-gradient(to bottom, white, grey);
 }
 
@@ -129,9 +154,90 @@ footer .footReg {
   text-align: center;
 }
 
-@media (max-width: 800px) {
+.fotoFrente {
+  display: flex;
+  text-align: center;
+  padding-top: 3%;
+  background-image: linear-gradient(to bottom, white, grey);
+}
+
+.ubicacion {
+  text-align: center;
+  padding-bottom: 5%;
+  background-image: linear-gradient(to bottom, white, grey);
+}
+
+.img-fluid {
+  border: 1px solid black;
+}
+
+iframe {
+  transition: all 2s;
+}
+iframe:hover {
+  width: 100%;
+}
+
+.tituloContacto, .form {
+  padding-top: 3%;
+  padding-bottom: 5%;
+  color: white;
+  background-image: linear-gradient(to bottom, black, grey);
+}
+
+.form {
+  background-image: linear-gradient(to bottom, grey, rgb(61, 60, 60));
+}
+
+.ofertas {
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, white, grey);
+}
+
+main h2 {
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 3%;
+}
+main h3 {
+  text-decoration: underline;
+  padding-top: 1%;
+}
+
+.color-p1 {
+  color: black;
+}
+
+.color-p2 {
+  color: blue;
+}
+
+.color-p3 {
+  color: red;
+}
+
+.color-p4 {
+  color: black;
+}
+
+.color-p5 {
+  color: blue;
+}
+
+.color-p6 {
+  color: red;
+}
+
+@media (max-width: 850px) {
   .carousel-inner img {
     height: 300px;
+  }
+
+  #logRed {
+    padding-left: 10%;
   }
 
   .fotI {
@@ -140,17 +246,18 @@ footer .footReg {
   }
 
   header h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .imgPe {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
   .imgPeq {
-    width: 60px;
+    width: 30px;
     height: 30px;
+    padding: 0%;
   }
 
   .sombra {
@@ -159,7 +266,7 @@ footer .footReg {
   }
 
   footer .mePaFlex {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   footer .medios {
     font-size: 0.8rem;
@@ -170,6 +277,30 @@ footer .footReg {
   }
   footer .mpfl1 {
     padding-right: 5%;
+  }
+
+  .fotoFrente {
+    display: block;
+    padding-bottom: 10%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .ubicacion {
+    background-image: linear-gradient(to bottom, rgb(112, 110, 110), grey);
+  }
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1rem;
+  }
+
+  #titulo {
+    padding-left: 0;
+    padding-top: 3%;
   }
 }
 
