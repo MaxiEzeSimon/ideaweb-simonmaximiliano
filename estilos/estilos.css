@@ -10,6 +10,10 @@
   font-family: "Ultra";
   src: url(../fonts/Ultra-Regular.ttf);
 }
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
 #gridArea {
   display: grid;
   grid-template-areas: "header" "menu" "main" "main2" "footer";
@@ -41,6 +45,14 @@ header h1 {
   font-family: ultra;
   font-size: 2.5rem;
   text-align: center;
+  margin-top: 1rem;
+}
+header p {
+  font-family: raleway;
+  color: white;
+  background-color: rgb(2, 97, 2);
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .padd {
@@ -64,29 +76,38 @@ header div a:hover {
 
 .imgPe {
   padding: 2px;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 .imgPeq {
   padding: 0;
+  margin-top: 1rem;
   width: 80px;
   height: 40px;
 }
 
 .navbar-nav {
-  background-image: linear-gradient(to bottom, grey, white);
+  background-color: rgb(2, 97, 2);
   justify-content: space-evenly;
   width: 100%;
 }
 
 .nav-item {
-  font-weight: bold;
+  font-weight: bolder;
+}
+
+#colorMenu {
+  color: white;
+  transition: box-shadow 0.5s;
+}
+#colorMenu:hover {
+  opacity: 0.5;
+  box-shadow: 1px 1px 1px black;
 }
 
 .margenCarrusel {
   padding-bottom: 3%;
-  background-image: linear-gradient(to bottom, white, grey);
 }
 
 .carousel-inner img {
@@ -113,8 +134,8 @@ div h5 {
   color: rgb(49, 49, 49);
 }
 div .ofertInd {
-  background-image: linear-gradient(to bottom, white, grey);
-  padding: 0;
+  font-family: ultra;
+  padding-top: 5%;
   text-align: center;
   color: black;
   margin: 0;
@@ -126,15 +147,14 @@ div .ofertInd {
   margin: 0;
   padding-bottom: 5%;
   padding-top: 5%;
-  background-image: linear-gradient(to bottom, grey, white);
 }
 
 .cardFlex2 {
   padding-bottom: 10%;
-  background-image: linear-gradient(to bottom, white, grey);
 }
 
 .sombra {
+  border-radius: 10%;
   box-shadow: 5px 5px 10px black;
   transition: box-shadow 1s;
 }
@@ -142,8 +162,24 @@ div .ofertInd {
   box-shadow: 15px 15px 25px black;
 }
 
+article p {
+  padding-top: 5%;
+  text-align: center;
+  font-weight: bold;
+}
+article div {
+  text-align: center;
+}
+article button {
+  font-family: raleway;
+  color: white;
+  font-weight: bold;
+  background-color: green;
+}
+
 footer {
-  background-image: linear-gradient(to bottom, white, grey);
+  color: white;
+  background-image: linear-gradient(to bottom, grey, black);
 }
 footer .mePaFlex {
   display: flex;
@@ -164,7 +200,6 @@ footer .footReg {
 .ubicacion {
   text-align: center;
   padding-bottom: 5%;
-  background-image: linear-gradient(to bottom, white, grey);
 }
 
 .img-fluid {
@@ -181,12 +216,11 @@ iframe:hover {
 .tituloContacto, .form {
   padding-top: 3%;
   padding-bottom: 5%;
-  color: white;
-  background-image: linear-gradient(to bottom, black, grey);
+  color: black;
 }
 
 .form {
-  background-image: linear-gradient(to bottom, grey, rgb(61, 60, 60));
+  font-weight: bold;
 }
 
 .ofertas {
@@ -194,7 +228,6 @@ iframe:hover {
   padding-top: 3%;
   padding-bottom: 3%;
   justify-content: space-between;
-  background-image: linear-gradient(to bottom, white, grey);
 }
 
 main h2 {
@@ -257,7 +290,20 @@ main h3 {
   .imgPeq {
     width: 30px;
     height: 30px;
-    padding: 0%;
+    padding-bottom: 0.7rem;
+  }
+
+  .cardFlex, .cardFlex2 {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  article img {
+    margin-top: 8%;
+  }
+
+  .bg-light {
+    --bs-bg-opacity: 0;
   }
 
   .sombra {
@@ -266,14 +312,14 @@ main h3 {
   }
 
   footer .mePaFlex {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   footer .medios {
     font-size: 0.8rem;
     font-weight: bold;
   }
   footer .mpfl {
-    padding-left: 5%;
+    padding-left: 3%;
   }
   footer .mpfl1 {
     padding-right: 5%;
@@ -288,10 +334,6 @@ main h3 {
     width: 100%;
     height: 400px;
   }
-
-  .ubicacion {
-    background-image: linear-gradient(to bottom, rgb(112, 110, 110), grey);
-  }
 }
 @media (max-width: 600px) {
   header h1 {
@@ -300,7 +342,6 @@ main h3 {
 
   #titulo {
     padding-left: 0;
-    padding-top: 3%;
   }
 }
 

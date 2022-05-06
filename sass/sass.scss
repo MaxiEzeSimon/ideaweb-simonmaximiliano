@@ -16,6 +16,14 @@ header {
      font-family: ultra;
      font-size: 2.5rem;
      text-align: center;
+     margin-top: 1rem;
+    }
+    p {
+        font-family: raleway;
+        color: white;
+        background-color: rgb(2, 97, 2);
+        text-align: center;
+        margin-bottom: 0;
     }
     
 }
@@ -43,23 +51,31 @@ header {
 }
 .imgPe {
     padding: 2px;
-    @include tamanios(70px, 70px);
+    @include tamanios(80px, 80px);
 }
 .imgPeq {
     padding: 0;
+    margin-top: 1rem;
     @include tamanios(80px, 40px);
 }
 .navbar-nav {
-    background-image: $bgi-gtow;
+    background-color: rgb(2, 97, 2);
     justify-content: $s-e;
     width: 100%;
 }
 .nav-item {
-    font-weight: bold;
+    font-weight: bolder;
+}
+#colorMenu {
+    color: white;
+    transition: box-shadow 0.5s;
+    &:hover {
+        opacity: 0.5;
+        box-shadow: 1px 1px 1px black;
+    }
 }
 .margenCarrusel {
     padding-bottom: 3%;
-    background-image: $bgi-wtog;
 }
 .carousel-inner img {
     height: 500px;
@@ -86,8 +102,8 @@ div {
         color: rgb(49, 49, 49);
     }
     .ofertInd {
-        background-image: $bgi-wtog;
-        padding: 0;
+        font-family: ultra;
+        padding-top: 5%;
         text-align: center;
         color: black;
         margin: 0;
@@ -99,22 +115,38 @@ div {
     margin: 0;
     padding-bottom: 5%;
     padding-top: 5%;
-    background-image: $bgi-gtow;
 }
 .cardFlex2 {
     @extend .cardFlex;
     padding-bottom: 10%;
-    background-image: $bgi-wtog;
 }
 .sombra {
+    border-radius: 10%;
     box-shadow: 5px 5px 10px black;
     transition: box-shadow 1s;
     &:hover {
         box-shadow: 15px 15px 25px black
     }
 }
+article {
+    p {
+        padding-top: 5%;
+        text-align: center;
+        font-weight: bold;
+    }
+    div {
+        text-align: center;
+    }
+    button {
+        font-family: raleway;
+        color: white;
+        font-weight: bold;
+        background-color: green;
+    }
+}
 footer {
-    background-image: $bgi-wtog;
+    color: white;
+    background-image: linear-gradient(to bottom, grey, black);
         .mePaFlex {
             display: flex;
             justify-content: $s-e;
@@ -133,7 +165,6 @@ footer {
 .ubicacion {
     text-align: center;
     padding-bottom: 5%;
-    background-image: $bgi-wtog;
 }    
 .img-fluid {
         border: 1px solid black;
@@ -148,19 +179,17 @@ iframe {
 .tituloContacto {
     padding-top: 3%;
     padding-bottom: 5%;
-    color: white;
-    background-image: linear-gradient(to bottom, black , grey);
+    color: black;
 }
 .form {
     @extend .tituloContacto;
-    background-image: linear-gradient(to bottom, grey , rgb(61, 60, 60));
+    font-weight: bold;
 }
 .ofertas {
     display: flex;
     padding-top: 3%;
     padding-bottom: 3%;
     justify-content: $s-b;
-    background-image: $bgi-wtog;
 }
 main {
     h2 {
@@ -207,21 +236,33 @@ $mapa: (
     }
     .imgPeq {
         @include tamanios(30px, 30px);
-        padding: 0%;
+        padding-bottom: 0.7rem;
+    }
+    .cardFlex {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    article {
+        img {
+            margin-top: 8%;
+        }
+    }
+    .bg-light {
+        --bs-bg-opacity: 0;
     }
     .sombra {
         @include tamanios(110px, 147px);
     }
     footer {
         .mePaFlex {
-            justify-content: $s-e;
+            justify-content: $s-b;
         }
         .medios {
             font-size: 0.8rem;
             font-weight: bold;
         }
         .mpfl {
-            padding-left: 5%;
+            padding-left: 3%;
         }
         .mpfl1 {
             padding-right: 5%;
@@ -234,10 +275,6 @@ $mapa: (
     iframe {
         @include tamanios(100%, 400px);
     }
-    .ubicacion {
-        background-image: linear-gradient(to bottom, rgb(112, 110, 110), grey);
-    }
-
 }
 @media (max-width: 600px) {
     header {
@@ -247,7 +284,6 @@ $mapa: (
     }
     #titulo {
         padding-left: 0;
-        padding-top: 3%;
     }
 }
 
