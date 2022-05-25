@@ -22,12 +22,13 @@
       <div id="titulo">
         <h1>DIETETICA CINNAMON</h1>
       </div>
-      <div>
-        <a href="https://www.facebook.com/Cinnamon-Diet%C3%A9tica-113472490362790/?hc_ref=ARTnadyete8jrl8-oPsu5RRl_qn3e4JnsMN0DuHzKS7_ZmLW_KzfXfyyn1emSIMEqgg&fref=nf&__tn__=kC-R"><img src="../images/fb.svg" id="logRed" class="imgPeq" alt="redes sociales"></a>
-        <a href="https://www.instagram.com/cinnamondietetica/?hl=es"><img src="../images/insta.svg" class="imgPeq" alt="redes sociales"></a>
+      <div class="buscador">
+        <input type="search" placeholder="Buscar Productos" id="Buscador" />
+        <a href="carrito.html"><img src="../images/carrito (1).png" class="carropadd" alt="carrito"></a>
       </div>
     </div>
   </header>
+  <!-- Comienzo Menu responsive ( Bootstrap ) -->
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
       <span class="navbar-toggler-icon"></span>
@@ -52,27 +53,46 @@
       </ul>
     </div>
   </nav>
-  <div class="fotoFrente main1">    
-    <img src="../images/frente.jpg" width="500" height="375" class="img-fluid" alt="">
-    <h2>Fundada en el año 2019 en la ciudad de La Plata, Cinnamon es una dietetica familiar
-        enfocada al comercio minorista aunque se trabaja la opcion mayorista sobre pedidos pre-pagados,
-        tenemos toda la variedad necesaria tanto para celiacos, vegetarianos y veganos.</h2>
+  <!-- Fin Menu (Bootstrap) -->
+  <div class="main1">
+    <hr>
+    <hr>
+    <h2 class="tituloNosotros">Dietetica Cinnamon</h2>
+    <p class="parEsp">Fundada en el año 2019 en la ciudad de La Plata, Cinnamon es una dietetica familiar
+      enfocada al comercio minorista aunque se trabaja la opcion mayorista sobre pedidos pre-pagados,
+      tenemos toda la variedad necesaria tanto para celiacos, vegetarianos y veganos. Ademas en nuestra tienda
+      puedes encontrar todas las harinas, frutos secos, legumbres,etc. Por el momento solo hacemos envios 
+      en la Ciudad de La Plata y alrededores pagando a traves de MercadoPago.</p>
+    <div class="fotoNos">   
+      <img src="../images/frente.jpg" width="500" height="375" class="imgfrente" alt="frente-local">
+      <img src="../images/dentro.jpg" class="frente" width="500" height="375" alt="dentro-local">
+    </div> 
   </div>
   <div class="ubicacion main2">
-    <h4>Donde encontrarnos: 30 n°788</h4>
+    <h3>¿Donde encontrarnos?</h3>
+    <p class="parEsp">Visitanos en cualquiera de estas sucursales o en nuestra <a href="../index.html"> tienda online.</a></p>
+    <ul class="sucursal">
+      <li type="disc"> Sucursal Barrio La Loma (30 n° 788)</li>
+      <li type="disc"> Sucursal Barrio La Cumbre (Proximamente)</li>
+    </ul>
+    <!-- Iframe de Google Maps -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.862977213409!2d-57.977191085183165!3d-34.93497328260651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e778f5cc2063%3A0xdc7c593991a35735!2sCinnamon%20Dietetica!5e0!3m2!1ses!2sar!4v1647308496378!5m2!1ses!2sar" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <h5>Horario de atencion: Lunes a Sábado de 9am - 20pm</h5>
   </div>
   <footer>
     <section class="mePaFlex">
       <div class="mpfl">
-        <h6>Medios de pago</h6>
+        <h6 class="medios">Medios de pago</h6>
         <img src="../images/MercadoPago_Logo.png" width="60px" height="60px" alt="mercadopagologo">
       </div>
       <div class="mpfl1">
-        <h6>Contactanos</h6>
+        <h6 class="medios">Contactanos</h6>
         <p>cinnamondietetica@gmail.com</p>
         <p>0221-153625853</p>
+        <p>
+          <a href="https://www.facebook.com/Cinnamon-Diet%C3%A9tica-113472490362790/"><img src="../images/face.png" alt="logo-fb"></a>
+          <a href="https://www.instagram.com/cinnamondietetica/?hl=es"><img src="../images/instagram.png" alt="logo-insta"></a>
+        </p>
       </div>
     </section>
     <hr>

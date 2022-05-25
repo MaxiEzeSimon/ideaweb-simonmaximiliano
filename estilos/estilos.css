@@ -14,6 +14,10 @@
   font-family: "Raleway";
   src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Black.ttf);
+}
 #gridArea {
   display: grid;
   grid-template-areas: "header" "menu" "main" "main2" "footer";
@@ -58,8 +62,22 @@ header p {
 .padd {
   display: flex;
   justify-content: space-between;
-  padding: 0%;
+  padding-left: 10px;
+  padding-right: 10px;
   overflow: hidden;
+}
+
+.titProd {
+  background-image: linear-gradient(to bottom, grey, black);
+  color: white;
+  padding-left: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+
+.titProd1 {
+  padding-left: 1%;
 }
 
 header div a:hover {
@@ -71,13 +89,27 @@ header div a:hover {
 }
 
 #titulo {
-  padding-left: 7%;
+  font-size: 1rem;
+  padding-left: 8%;
+}
+
+.buscador {
+  margin-top: 1.2rem;
+  padding-left: 3%;
+}
+
+#Buscador {
+  background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+  background-size: 18px;
+  width: 200px;
+  padding-left: 30px;
 }
 
 .imgPe {
-  padding: 2px;
-  width: 80px;
-  height: 80px;
+  margin-top: 2px;
+  padding-top: 4px;
+  width: 90px;
+  height: 90px;
 }
 
 .imgPeq {
@@ -88,9 +120,13 @@ header div a:hover {
 }
 
 .navbar-nav {
-  background-color: rgb(2, 97, 2);
+  background-color: white;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.navbar {
+  padding: 0;
 }
 
 .nav-item {
@@ -98,25 +134,37 @@ header div a:hover {
 }
 
 #colorMenu {
-  color: white;
-  transition: box-shadow 0.5s;
+  color: rgb(4, 109, 27);
 }
 #colorMenu:hover {
   opacity: 0.5;
-  box-shadow: 1px 1px 1px black;
 }
 
 .margenCarrusel {
-  padding-bottom: 3%;
+  padding-top: 1%;
 }
 
 .carousel-inner img {
-  height: 500px;
+  height: 450px;
 }
 
 section h2 {
-  padding-bottom: 5%;
-  text-decoration: underline;
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+section h3 {
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+.tituloNosotros {
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+
+.sucursal {
+  text-align: left;
 }
 
 div h2 {
@@ -134,35 +182,68 @@ div h5 {
   color: rgb(49, 49, 49);
 }
 div .ofertInd {
-  font-family: ultra;
-  padding-top: 5%;
+  font-family: roboto;
+  padding-top: 8%;
+  padding-bottom: 3%;
+  text-decoration: underline;
   text-align: center;
   color: black;
   margin: 0;
 }
 
-.cardFlex, .cardFlex2 {
+.parEsp {
+  font-size: 1.2rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.bannerHome {
   display: flex;
   justify-content: space-evenly;
-  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(214, 211, 211);
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.opacity-banner {
+  opacity: 0.7;
+}
+
+.cardFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.artiofer {
   padding-bottom: 5%;
-  padding-top: 5%;
 }
 
-.cardFlex2 {
-  padding-bottom: 10%;
+.medCom2 {
+  opacity: 0.7;
+  padding-top: 8%;
+  margin-bottom: 0;
 }
 
-.sombra {
-  border-radius: 10%;
-  box-shadow: 5px 5px 10px black;
-  transition: box-shadow 1s;
-}
-.sombra:hover {
-  box-shadow: 15px 15px 25px black;
+.redes {
+  padding-left: 5%;
 }
 
+article {
+  font-family: roboto;
+}
 article p {
+  margin: 0;
   padding-top: 5%;
   text-align: center;
   font-weight: bold;
@@ -171,6 +252,18 @@ article div {
   text-align: center;
 }
 article button {
+  font-family: raleway;
+  color: white;
+  font-weight: bold;
+  background-color: green;
+}
+
+.imgProd p {
+  margin: 0;
+  padding-top: 5%;
+  font-weight: bold;
+}
+.imgProd button {
   font-family: raleway;
   color: white;
   font-weight: bold;
@@ -190,20 +283,28 @@ footer .footReg {
   text-align: center;
 }
 
-.fotoFrente {
-  display: flex;
-  text-align: center;
-  padding-top: 3%;
-  background-image: linear-gradient(to bottom, white, grey);
+div p a:hover {
+  opacity: 0.5;
+}
+
+.medCom {
+  padding-left: 20%;
 }
 
 .ubicacion {
   text-align: center;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
-.img-fluid {
-  border: 1px solid black;
+.fotoNos {
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.imgfrente {
+  margin-right: 2%;
 }
 
 iframe {
@@ -214,77 +315,265 @@ iframe:hover {
 }
 
 .tituloContacto, .form {
-  padding-top: 3%;
-  padding-bottom: 5%;
+  font-family: roboto;
+  padding-top: 1%;
+  padding-bottom: 3%;
   color: black;
+  margin-left: 2%;
 }
 
 .form {
+  display: flex;
+  margin-left: 2%;
   font-weight: bold;
+}
+
+.coments {
+  padding-left: 2%;
 }
 
 .ofertas {
   display: flex;
+  padding-right: 2%;
+  padding-left: 2%;
   padding-top: 3%;
   padding-bottom: 3%;
+  flex-wrap: wrap;
+  text-align: center;
   justify-content: space-between;
 }
 
+.prodPad {
+  padding-bottom: 4%;
+}
+
+.foton {
+  width: 192px;
+  height: 192px;
+}
+
 main h2 {
+  font-family: roboto;
+  padding-top: 5%;
   text-decoration: underline;
-  text-align: center;
-  padding-bottom: 3%;
+  text-align: left;
 }
 main h3 {
   text-decoration: underline;
   padding-top: 1%;
 }
-
-.color-p1 {
+main a {
   color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+main a:hover {
+  opacity: 0.5;
 }
 
-.color-p2 {
-  color: blue;
+.inicio {
+  padding-top: 2%;
+  padding-left: 1%;
+  font-family: cinzel;
 }
 
-.color-p3 {
-  color: red;
+.inicio1 {
+  padding-left: 1%;
+  font-family: roboto;
 }
 
-.color-p4 {
+#carrito {
+  padding-left: 1%;
+  padding-top: 2%;
+  font-family: roboto;
+}
+
+.carro {
+  margin-top: 7%;
+  margin-bottom: 15%;
+  text-align: center;
+}
+
+.link {
   color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.link:hover {
+  opacity: 0.5;
 }
 
-.color-p5 {
-  color: blue;
+.descri {
+  padding-left: 1.5%;
+  font-family: cinzel;
+  padding-bottom: 3%;
 }
 
-.color-p6 {
-  color: red;
+.prodFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20%;
+  padding-top: 0%;
+  text-align: center;
 }
 
-@media (max-width: 850px) {
+.prodDet {
+  padding-bottom: 5%;
+  padding-right: 5%;
+}
+
+.check {
+  font-size: larger;
+  font-family: roboto;
+}
+
+#legumbres:checked ~ #productos .fruto {
+  display: none;
+}
+
+#legumbres:checked ~ #productos .cereales {
+  display: none;
+}
+
+#legumbres:checked ~ #productos .harina {
+  display: none;
+}
+
+#Frutos:checked ~ #productos .cereales {
+  display: none;
+}
+
+#Frutos:checked ~ #productos .legumbre {
+  display: none;
+}
+
+#Frutos:checked ~ #productos .harina {
+  display: none;
+}
+
+#Cereales:checked ~ #productos .legumbre {
+  display: none;
+}
+
+#Cereales:checked ~ #productos .fruto {
+  display: none;
+}
+
+#Cereales:checked ~ #productos .harina {
+  display: none;
+}
+
+#harinas:checked ~ #productos .cereales {
+  display: none;
+}
+
+#harinas:checked ~ #productos .fruto {
+  display: none;
+}
+
+#harinas:checked ~ #productos .legumbre {
+  display: none;
+}
+
+.fruto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.harina {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cereales {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.legumbre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.oferTitulos {
+  color: white;
+  font-weight: normal;
+  background-image: linear-gradient(to bottom, grey, black);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-decoration: none;
+  text-align: center;
+  font-family: roboto;
+}
+
+.imgOfer {
+  text-align: center;
+  border: 1px solid black;
+  transition: all 0.5s;
+}
+.imgOfer:hover {
+  opacity: 0.5;
+}
+
+.prodDescri {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: roboto;
+  font-size: 1.3rem;
+}
+
+.subtitulo {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.precio {
+  font-size: 2rem;
+}
+
+.descripcion {
+  padding-left: 8%;
+}
+
+#contador {
+  width: 50px;
+  height: 35px;
+}
+
+div .descripcion button {
+  font-family: raleway;
+  color: white;
+  font-weight: bold;
+  background-color: green;
+}
+
+.carropadd {
+  padding-bottom: 3%;
+}
+
+@media (max-width: 855px) {
+  #Buscador {
+    background-size: 18px;
+    width: 200px;
+    padding-left: 20px;
+  }
+
   .carousel-inner img {
-    height: 300px;
+    height: 250px;
   }
 
-  #logRed {
-    padding-left: 10%;
+  .frente {
+    display: none;
   }
 
-  .fotI {
-    padding-top: 15%;
-    padding-bottom: 8%;
-  }
-
-  header h1 {
-    font-size: 1.4rem;
-  }
-
-  .imgPe {
-    width: 50px;
-    height: 50px;
+  #titulo {
+    display: none;
   }
 
   .imgPeq {
@@ -293,7 +582,17 @@ main h3 {
     padding-bottom: 0.7rem;
   }
 
-  .cardFlex, .cardFlex2 {
+  .bannerfotos {
+    width: 32px;
+    height: 32px;
+  }
+
+  .bannertexto {
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+
+  .cardFlex {
     text-align: center;
     flex-wrap: wrap;
   }
@@ -306,9 +605,13 @@ main h3 {
     --bs-bg-opacity: 0;
   }
 
-  .sombra {
-    width: 110px;
-    height: 147px;
+  .descripcion {
+    padding-left: 3%;
+    padding-bottom: 12%;
+  }
+
+  .prodFlex {
+    padding-top: 7%;
   }
 
   footer .mePaFlex {
@@ -335,13 +638,62 @@ main h3 {
     height: 400px;
   }
 }
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1rem;
+@media (max-width: 1020px) {
+  .buscador {
+    margin-top: 0.5rem;
+    padding-left: 0;
   }
 
-  #titulo {
+  .form {
+    flex-wrap: wrap;
+  }
+
+  .medCom {
+    padding-left: 3%;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .imgPe {
+    margin: 0;
+    padding-bottom: 0;
+    width: 65px;
+    height: 65px;
+  }
+
+  .navbar-toggler {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 884px) {
+  .coments {
+    padding-left: 8%;
+  }
+  .medcom {
     padding-left: 0;
+    margin-top: 8%;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .coments {
+    padding: 0;
+  }
+  .carousel-inner img {
+    height: 180px;
+  }
+
+  .carro {
+    margin-top: 15%;
+    margin-bottom: 25%;
+  }
+}
+@media (min-width: 600px) and (max-width: 855px) {
+  #Buscador {
+    background-size: 18px;
+    width: 320px;
+    padding-left: 20px;
   }
 }
 

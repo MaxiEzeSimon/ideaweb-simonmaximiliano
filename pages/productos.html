@@ -22,12 +22,13 @@
       <div id="titulo">
         <h1>DIETETICA CINNAMON</h1>
       </div>
-      <div>
-        <a href="https://www.facebook.com/Cinnamon-Diet%C3%A9tica-113472490362790/?hc_ref=ARTnadyete8jrl8-oPsu5RRl_qn3e4JnsMN0DuHzKS7_ZmLW_KzfXfyyn1emSIMEqgg&fref=nf&__tn__=kC-R"><img src="../images/fb.svg" id="logRed" class="imgPeq" alt="redes sociales"></a>
-        <a href="https://www.instagram.com/cinnamondietetica/?hl=es"><img src="../images/insta.svg" class="imgPeq" alt="redes sociales"></a>
+      <div class="buscador">
+        <input type="search" placeholder="Buscar Productos" id="Buscador" />
+        <a href="carrito.html"><img src="../images/carrito (1).png" class="carropadd" alt="carrito"></a>
       </div>
     </div>
   </header>
+  <!-- Comienzo Menu responsive ( Bootstrap ) -->
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
       <span class="navbar-toggler-icon"></span>
@@ -52,44 +53,365 @@
       </ul>
     </div>
   </nav>
-  <main>
-    <h2>PRODUCTOS</h2>
-    <h3 class="color-p1">HARINAS</h3>
-    <div class="ofertas main1">    
-      <img src="../images/oferta1.jpg" class="sombra" alt="">
-      <img src="../images/oferta1.jpg" class="sombra" alt="">
-      <img src="../images/oferta1.jpg" class="sombra" alt="">
+  <!-- Fin Menu (Bootstrap) -->
+  <div class="main1">
+    <p class="inicio"><a href="../index.html">Inicio</a> > Productos</p>
+    <hr>
+    <h2 class="titProd">PRODUCTOS</h2>
+  </div>
+  <main class="main2">
+    <!-- Comienzo Menu Lateral con Checkbox -->
+    <div class="titProd1">
+      <input type="radio" name="filtro" id="Todo" checked>
+      <label for="Todo" class="check">Todo</label><br>
+      <input type="radio" name="filtro" id="legumbres">
+      <label for="legumbres" class="check">Legumbres</label><br>
+      <input type="radio" name="filtro" id="harinas">
+      <label for="harinas" class="check">Harinas</label><br>
+      <input type="radio" name="filtro" id="Frutos">
+      <label for="Frutos" class="check">Frutos Secos</label><br>
+      <input type="radio" name="filtro" id="Cereales">
+      <label for="Cereales" class="check">Cereales</label>
+      <!-- Fin Menu Lateral con Checkbox -->
+      <div class="prodFlex" id="productos">
+        <!-- Comienzo Lista Harinas -->
+        <div class="harina imgProd">
+          <div class="prodDet">
+            <img src="../images/harinaavena.png" class="imgOfer" alt="harina-avena">
+            <p>Harina de avena xKg</p>
+            <p class="prodPad">$190</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/harina-integral.png" class="imgOfer" alt="harina-integral">
+            <p>Harina integral xKg</p>
+            <p class="prodPad">$140</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/harinaalmendra.png" class="imgOfer" alt="harina-almendra">
+            <p>H. de almendra x500g</p>
+            <p class="prodPad">$1250</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/harinamaiz.png" class="imgOfer" alt="harina-maiz">
+            <p>Harina de maiz xKg</p>
+            <p class="prodPad">$160</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/harinacoco.png" class="imgOfer" alt="harina-coco">
+            <p>Harina de coco xKg</p>
+            <p class="prodPad">$500</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/harinaalgarroba.png" class="imgOfer" alt="harina-algarroba">
+            <p>H. de algarroba xKg</p>
+            <p class="prodPad">$300</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/harinaarrozblanco.png" class="imgOfer" alt="harina-arroz">
+            <p>Harina de arroz xKg</p>
+            <p class="prodPad">$120</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/harina-garbanzo.png" class="imgOfer" alt="harina-soja">
+            <p>Harina de soja xKg</p>
+            <p class="prodPad">$150</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/fecula-mandioca.png" class="imgOfer" alt="fecula-mandioca">
+            <p>Fec. de mandioca xKg</p>
+            <p class="prodPad">$280</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/harina-arveja.png" class="imgOfer" alt="harina-arveja">
+            <p>Harina de arveja xKg</p>
+            <p class="prodPad">$200</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <!-- Fin Lista Harinas -->
+        </div>
+        <!-- Comienzo Lista Frutos Secos -->
+        <div class="fruto imgProd">
+          <div class="prodDet">
+            <a href="almendras.html"><img src="../images/almendradesc.png" class="imgOfer" alt="almendras"></a>
+            <p>Almendras x100gr</p>
+            <p class="prodPad">$190</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/mixsopasas.jpg" class="imgOfer" alt="mix-sin-pasas">
+            <p>Mix s/pasas x100gr</p>
+            <p class="prodPad">$160</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/avellanas.jpg" class="imgOfer" alt="avellanas">
+            <p>Avellanas x100gr</p>
+            <p class="prodPad">$280</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/nueces.png" class="imgOfer" alt="nueces">
+            <p>Nueces x100gr</p>
+            <p class="prodPad">$230</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/mixpatagonico.png" class="imgOfer" alt="mix-patagonico">
+            <p>Mix F. Rojos x100g</p>
+            <p class="prodPad">$190</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/castanias.png" class="imgOfer" alt="castanias">
+            <p>Castañas x100gr</p>
+            <p class="prodPad">$200</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/pistachos.png" class="imgOfer" alt="pistachos">
+            <p>Pistachos x100gr</p>
+            <p class="prodPad">$300</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/granolalasfor.png" class="imgOfer" alt="granola-lasfor">
+            <p>Granola Lasfor xKg</p>
+            <p class="prodPad">$800</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/nuezcascara.png" class="imgOfer" alt="nuez-cascara">
+            <p>Nuez c/ cascara xKg</p>
+            <p class="prodPad">$1400</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/mix-premium.png" class="imgOfer" alt="mix-premium">
+            <p>Mix Premium x100gr</p>
+            <p class="prodPad">$200</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <!-- Fin Lista Frutos Secos -->
+        </div>
+        <!-- Comienzo Lista Legumbres -->
+        <div class="legumbre imgProd">
+          <div class="prodDet">
+            <img src="../images/yamani.png" class="imgOfer" alt="arroz-yamani">
+            <p>Arroz Yamani xKg</p>
+            <p class="prodPad">$220</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/arvejass.jpg" class="imgOfer" alt="arvejas">
+            <p>Arvejas enteras xKg</p>
+            <p class="prodPad">$150</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/lenteja (1).png" class="imgOfer" alt="lentejas">
+            <p>Lentejas xKg</p>
+            <p class="prodPad">$340</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/poroto-soja.png" class="imgOfer" alt="porotos-soja">
+            <p>Porotos de Soja xKg</p>
+            <p class="prodPad">$160</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/garbanzos (1).png" class="imgOfer" alt="garbanzos">
+            <p>Garbanzos xKg</p>
+            <p class="prodPad">$240</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/arroz-integral.png" class="imgOfer" alt="arroz-integral">
+            <p>Arroz Integral xKg</p>
+            <p class="prodPad">$150</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/porotonegro.png" class="imgOfer" alt="poroto-negro">
+            <p>Poroto Negro xKg</p>
+            <p class="prodPad">$400</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/pallares.png" class="imgOfer" alt="poroto-pallares">
+            <p>Porotos Pallares xKg</p>
+            <p class="prodPad">$600</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/poroto-aduki.png" class="imgOfer" alt="poroto-aduki">
+            <p>Porotos Aduki xKg</p>
+            <p class="prodPad">$280</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/carnaroli.png" class="imgOfer" alt="arroz-carnaroli">
+            <p>Arroz Carnaroli xKg</p>
+            <p class="prodPad">$440</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <!-- Fin Lista Legumbres -->
+        </div>
+        <!-- Comienzo Lista Cereales -->
+        <div class="cereales imgProd">
+          <div class="prodDet">
+            <img src="../images/copossin.jpg" class="imgOfer" alt="copos-sin-azucar">
+            <p>Copos s/ Azucar x500g</p>
+            <p class="prodPad">$250</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/aritos.jpg" class="imgOfer" alt="aritos-frutales">
+            <p>Aritos Frutales x500g</p>
+            <p class="prodPad">$400</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/avenainst.jpg" class="imgOfer" alt="avena-instantanea">
+            <p>Avena instantánea xKg</p>
+            <p class="prodPad">$240</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/bolitas.jpg" class="imgOfer" alt="bolitas-choco">
+            <p>Bolitas Choco x500gr</p>
+            <p class="prodPad">$500</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/ositos.jpg" class="imgOfer" alt="ositos-frutilla">
+            <p>Ositos Frutilla x500gr</p>
+            <p class="prodPad">$380</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/coposaz.jpg" class="imgOfer" alt="copos-con-azucar">
+            <p>Copos c/Azucar x500g</p>
+            <p class="prodPad">$350</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/almohadita-avellana.jpg" class="imgOfer" alt="almohadita-avellana">
+            <p>Almoh. Avellana x250g</p>
+            <p class="prodPad">$200</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/almohaditas-choco.jpg" class="imgOfer" alt="almohadita-choco">
+            <p>Almoh. Choco x250g</p>
+            <p class="prodPad">$250</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/almohaditas-frutilla.jpg" class="imgOfer" alt="almohadita-frutilla">
+            <p>Almoh. Frutilla x250g</p>
+            <p class="prodPad">$250</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="prodDet">
+            <img src="../images/aritosmiel.jpg" class="imgOfer" alt="aritos-miel">
+            <p>Aritos de miel x500g</p>
+            <p class="prodPad">$350</p>
+            <div>
+              <button>Agregar al carrito</button>
+            </div>
+          </div>
+          <!-- Fin Lista Cereales -->
+        </div>
+      </div>
     </div>
-    <h3 class="color-p2">LEGUMBRES</h3>
-    <div class="ofertas main1">
-      <img src="../images/oferta1.jpg" class="sombra" alt="">
-      <img src="../images/oferta1.jpg" class="sombra" alt="">
-      <img src="../images/oferta1.jpg" class="sombra" alt="">
-    </div>
-    <h3 class="color-p3">CEREALES</h3>
-      <div class="ofertas main1">    
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-      </div>
-      <h3 class="color-p4">FRUTOS SECOS</h3>
-      <div class="ofertas main2">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-      </div>
-      <h3 class="color-p5">APTO VEGANOS</h3>
-      <div class="ofertas main2">    
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-      </div>
-      <h3 class="color-p6">SIN TACC</h3>
-      <div class="ofertas main2">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-        <img src="../images/oferta1.jpg" class="sombra" alt="">
-      </div>
   </main>   
   <footer>
     <section class="mePaFlex">
@@ -101,6 +423,10 @@
         <h6 class="medios">Contactanos</h6>
         <p>cinnamondietetica@gmail.com</p>
         <p>0221-153625853</p>
+        <p>
+          <a href="https://www.facebook.com/Cinnamon-Diet%C3%A9tica-113472490362790/"><img src="../images/face.png" alt="logo-fb"></a>
+          <a href="https://www.instagram.com/cinnamondietetica/?hl=es"><img src="../images/instagram.png" alt="logo-insta"></a>
+        </p>
       </div>
     </section>
     <hr>
